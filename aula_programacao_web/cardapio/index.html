@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio da Lanchonete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff8800;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.02);
+        }
+
+        .menu-item h2 {
+            margin-top: 0;
+            color: #222;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item h2 i {
+            margin-right: 10px;
+        }
+
+        .menu-item p {
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #ff8800;
+        }
+
+        .menu-item-image {
+            width: 80px; /* Largura da imagem */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-hamburger"></i> Cardápio ZéLanches <i class="fas fa-hamburger"></i></h1>
+    </header>
+
+    <div class="menu-container">
+        <!-- Lanches -->
+        <div class="menu-section">
+            <h2>Lanches</h2>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/520410807/pt/foto/cheeseburguer.jpg?s=170667a&w=0&k=20&c=gUK1A1hQtIKaTxx05bmopmaKvCvZ1U3j_wGxvm24mAU=" width=90px height="80px" alt="Hambúrguer Clássico" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-cheeseburger"></i> Hambúrguer Clássico</h2>
+                    <p>Pão, carne, alface, tomate, queijo e maionese.</p>
+                    <p class="price">R$ 15,00</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://sachefmio.blob.core.windows.net/fotos/x-bacon-73518.jpg" width=90px height="80px" alt="X Bacon" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-bacon"></i> X-Bacon</h2>
+                    <p>Pão, carne, bacon, queijo, alface, tomate e maionese.</p>
+                    <p class="price">R$ 18,00</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://conteudo.imguol.com.br/c/noticias/32/2019/06/27/x-egg-giraffas-1561679653383_v2_300x225.jpg.webp" width=100px height="80px" alt="Vegetariano" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i> Vegetariano</h2>
+                    <p>Pão, hambúrguer de grão-de-bico, alface, tomate, queijo e molho especial.</p>
+                    <p class="price">R$ 16,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aperitivos -->
+        <div class="menu-section">
+            <h2>Aperitivos</h2>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5TQHYD9iMqyXZqEt3AV_1Li59RsAd7IQNqQ48-UnXPF_XO1ZeUpHb3kZh-4iAL4ZAWs&usqp=CAU" width=100px height="80px" alt="batata frita" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i>Batata Fritas</h2>
+                    <p>Porção de batata fritas 400g.</p>
+                    <p class="price">R$ 24,50</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErK-Jz8yqcTI3FbIUggkQiu9Mz1kGcHAV9A&usqp=CAU" width=100px height="80px" alt="batata frita" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i>Cebola Empanada</h2>
+                    <p>Porção de Cebola Empanada 400g.</p>
+                    <p class="price">R$ 20,50</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+
+                <img src="https://www.pizzariaspeed.com/wp-content/uploads/2021/10/la-carte2.png" width=200px height="100px" alt="batata frita" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i>Frango à passarinho</h2>
+                    <p>Porção de frango à passarinho 400g.</p>
+                    <p class="price">R$ 27,60</p>
+                </div>
+        </div>
+
+        <!-- Bebidas -->
+        <div class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="menu-item">
+                <img src="https://img.freepik.com/fotos-premium/copo-de-respingo-de-cola-legal-com-gelo-caindo-isolado-no-fundo-branco_252965-940.jpg" width=200px height="100px" alt="batata frita" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i>Refrigerante</h2>
+                    <p>Lata de refrigerante (300ml).</p>
+                    <p class="price">R$ 4,00</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://img.freepik.com/vetores-gratis/copo-de-agua-isolado_1368-2666.jpg" width=200px height="100px" alt="batata frita" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i>Água Mineral</h2>
+                    <p>Copo de água Mineral Natural (500ml).</p>
+                    <p class="price">R$ 3,00</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://brabus.cardappiosdigital.com.br/wp-content/uploads/2021/01/sucodelaranja.jpg" width=200px height="100px" alt="batata frita" class="menu-item-image">
+                <div class="item-info">
+                    <h2><i class="fas fa-leaf"></i>Suco Natural</h2>
+                    <p>Suco Natural(400ml).</p>
+                    <p class="price">R$ 7,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

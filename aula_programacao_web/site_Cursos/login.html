@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+    Strongly Typed by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Adicione estilos de formulário personalizados aqui */
+        .form-container {
+            margin-top: 50px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            font-weight: bold;
+        }
+
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-container button[type="submit"] {
+            background-color: #FFC107;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">Centro de Línguas</a></h1>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a class="icon solid fa-bars" href="index.html"><span>Home</span></a></li>
+                        <li><a class="icon solid fa-user-plus" href="cadastro.html"><span>Cadastre-se</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Formulário de Login -->
+        <section id="login">
+            <div class="container form-container">
+                <h2>Login</h2>
+                <form action="processar_login.php" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
