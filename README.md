@@ -1,3 +1,3 @@
 # programacao-web
 
-Alterar os caminhos o path absolute do seu computador
+Alterar os caminhos para o path absolute do seu computador
